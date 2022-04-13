@@ -79,7 +79,7 @@ nav ul li a.active, nav ul li a:hover{
 /* Main body content */
 .main-area div {
   margin: 5% auto;
-  
+  overflow-x:hidden;
 }
 .main-area div h1 {
   width: 50%;
