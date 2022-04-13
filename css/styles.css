@@ -13,11 +13,11 @@ body{
   background: 
     /* top, transparent red, faked with gradient */ 
     linear-gradient(
-      rgba(0, 0, 0.45), 
-      rgba(0, 0, 0, 0.45)
+      rgba(0, 0, 0.75), 
+      rgba(0, 0, 0, 0.75)
     ),
     /* bottom, image */
-    url();
+    url(../img/code.jpg);
 }
 
 /*Parallax */
@@ -28,7 +28,7 @@ body{
 
 /* Navbar */
 nav{
-    background: goldenrod;
+    background: black;
     height: 80px;
     width: 100%;
 }
@@ -38,6 +38,7 @@ label.logo{
     line-height: 80px;
     padding: 0 100px;
     font-weight: bold;
+
 }
 nav ul {
     float: right;
@@ -56,7 +57,7 @@ nav ul li a {
     text-transform: uppercase;
 }
 nav ul li a.active, nav ul li a:hover{
-    background: #1b9bff;
+    background: goldenrod;
     transition: .5s;
 
 }
@@ -93,20 +94,6 @@ nav ul li a.active, nav ul li a:hover{
   margin: 0;
   text-align: center;
 }
-.main-area div a {
-  display: block;
-  margin: 5% auto;
-  width: 50%;
-
-}
-.main-area div a button {
-  width: 200px;
-  max-width: 100%;
-  padding: 15px;
-  color: white;
-  background-color: #0082e6;
-  border-radius: 10px;
-}
 .main-area {
   margin: 20px auto;
   padding: 20px;
@@ -115,12 +102,6 @@ nav ul li a.active, nav ul li a:hover{
   grid-auto-rows: minmax(150px, auto);
   grid-template-areas: 'headerbanner headerbanner headerbanner headerbanner'
                        'cat1 cat1 cat1 cat1'
-                       'cat2 cat2 cat2 cat2'
-                       'cat3 cat3 cat3 cat3'
-                       'cat4 cat4 cat4 cat4'
-                       'cat5 cat5 cat5 cat5'
-                       'cat6 cat6 cat6 cat6'
-                       'cat7 cat7 cat7 cat7'
                         ;
 }
 .headerbanner {
@@ -135,7 +116,7 @@ nav ul li a.active, nav ul li a:hover{
       rgba(0, 0, 0, 0.45)
     ),
     /* bottom, image */
-    url(warehouse.jpg);
+    url(../img/sola.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -194,22 +175,14 @@ nav ul li a.active, nav ul li a:hover{
 #card6{
   grid-area: card6;
 }
-.catheader{
+.main-area div .catheader{
   grid-area: catheader;
+  margin: 0 auto;
+  padding: 0;
 }
 
 
-.cat7 {
-  grid-area: cat7;
 
-  height: 100vh;
-  background-image: url(sola.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  padding: 12.5% 0;
-  border: 3px solid green;
-}
 .catpl {
   transform: translateX(-100%);
   opacity: 0;
@@ -227,53 +200,6 @@ nav ul li a.active, nav ul li a:hover{
   transform: translateX(0);
 }
 
-.cat2 {
-  grid-area: cat2;
-  height: 100vh;
-  background-image: url(grid.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  padding: 12.5% 0;
-}
-.cat3 {
-  grid-area: cat3;
-  height: 100vh;
-  background-image: url(dc.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  padding: 12.5% 0;
-}
-.cat4 {
-  grid-area: cat4;
-  height: 100vh;
-  background-image: url(sub.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  padding: 12.5% 0;
-}
-.cat5 {
-  grid-area: cat5;
-  height: 100vh;
-  background-image: url(solar.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  padding: 12.5% 0;
-}
-.cat6 {
-  grid-area: cat6;
-  height: 100vh;
-  background-image: url(code.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  padding: 12.5% 0;
-}
-
-
 .cat1 {
   grid-area: cat1;
   display: grid;
@@ -284,7 +210,14 @@ nav ul li a.active, nav ul li a:hover{
                       'card4 card5 card6';
   height: 100vh;
   width: 100%;
-  background-image: url(solar.jpg);
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),
+    /* bottom, image */
+    url(../img/dc.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -339,7 +272,7 @@ footer{
   content: '';
   height: 2px;
   width: 15%;
-  background: #f12020;
+  background: goldenrod;
   top: -10px;
 }
 .left .content p{
@@ -362,7 +295,7 @@ footer{
   transition: 0.3s;
 }
 .left .content .social a span:hover{
-  background: #f12020;
+  background: goldenrod;
 }
 .center .content .fas{
   font-size: 1.4375rem;
@@ -376,7 +309,7 @@ footer{
   cursor: pointer;
 }
 .center .content .fas:hover{
-  background: #f12020;
+  background: goldenrod;
 }
 .center .content .text{
   font-size: 1.0625rem;
@@ -403,7 +336,7 @@ footer{
 }
 .right form input:focus,
 .right form textarea:focus{
-  outline-color: #3498db;
+  outline-color: goldenrod;
 }
 .right form input{
   height: 35px;
@@ -416,7 +349,7 @@ footer{
   width: 100%;
   border: none;
   outline: none;
-  background: #f12020;
+  background: goldenrod;
   font-size: 1.0625rem;
   font-weight: 500;
   cursor: pointer;
@@ -434,7 +367,7 @@ footer{
   color: #656565;
 }
 .bottom center a{
-  color: #f12020;
+  color: goldenrod;
   text-decoration: none;
 }
 .bottom center a:hover{
@@ -512,18 +445,22 @@ a:hover,a.active{
    .main-area div .card {
      margin: 0% auto;
    }
+   .main-area div h1 {
+    font-size: 42px;
+
+  }
+  .main-area div p {
+    font-size: 28px;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .main-area {
     grid-template-areas: 'headerbanner'
                          'cat1'
-                         'cat2'
-                         'cat3'
-                         'cat4'
-                         'cat5'
-                         'cat6'
-                         'cat7'
                          ;
  }
  .cat1 {
