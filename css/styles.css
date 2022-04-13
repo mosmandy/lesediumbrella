@@ -451,9 +451,6 @@ a:hover,a.active{
   }
   .main-area div p {
     font-size: 28px;
-    color: #fff;
-    margin: 0;
-    text-align: center;
   }
 }
 
@@ -478,6 +475,16 @@ a:hover,a.active{
  .card {
    margin : 5% 0;
  }
+ .main-area div h1 {
+    font-size: 36px;
+
+  }
+ .main-area div p {
+    font-size: 20px;
+  }
+  label.logo{
+    font-size: 24px;
+  }
 }
 @media screen and (max-width: 440px) {
   label.logo{
