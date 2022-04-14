@@ -1,2 +1,1 @@
-# lesediumbrella
-lesediumbrella making
+https://lesediumbrella.co.bw
